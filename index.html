@@ -52,6 +52,8 @@ button,input{font:inherit;color:inherit}
 .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px}
 .seal{display:inline-grid;place-items:center;width:34px;height:34px;background:var(--accent);color:var(--accent-ink);font-family:var(--font-han);font-size:19px;border-radius:7px;transform:rotate(-5deg);box-shadow:inset 0 0 0 2px rgba(255,255,255,.28)}
 .tools{display:flex;gap:6px;align-items:center}
+.pill{display:inline-flex;align-items:center;min-height:38px;padding:0 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);text-decoration:none;font-size:14px;font-weight:600}
+.pill:hover{background:var(--surface-2)}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
 .seg button{border:0;background:none;padding:6px 12px;font-size:14px;cursor:pointer;color:var(--muted);min-height:36px}
 .seg button.han{font-family:var(--font-han);font-weight:700}
@@ -199,6 +201,7 @@ main{max-width:1140px;margin:0 auto;padding:4px 16px 48px}
   .clock{font-size:19px;min-width:72px;padding:3px 8px}
   .badge{width:34px;height:34px;font-size:17px}
   .pbar{gap:9px;padding:6px 8px}
+  .pill{padding:0 11px}
 }
 @media (prefers-reduced-motion: reduce){
   .pc,.pc-in,.toast{transition:none}
@@ -210,6 +213,7 @@ main{max-width:1140px;margin:0 auto;padding:4px 16px 48px}
 <header class="top">
   <div class="brand"><span class="seal" aria-hidden="true">棋</span><span class="brand-name">Cờ Tướng Online</span></div>
   <div class="tools">
+    <a class="pill" href="https://mrbaobao1112.github.io/co-vua/">Cờ vua</a>
     <div class="seg" role="group" aria-label="Chữ trên quân cờ">
       <button id="lblHan" class="han" aria-pressed="true" title="Quân cờ chữ Hán">漢</button>
       <button id="lblVn" aria-pressed="false" title="Quân cờ chữ Việt">Việt</button>
